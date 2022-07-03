@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+:root {
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --secondary-color: #62a547;
+    --primary-color: #c7d6ab;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--font-family);
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  nav {
+    font-size: 1.4rem;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 0px;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav h1 {
+    color: var(--secondary-color);
+  }
+  
+  nav a {
+    color: var(--secondary-color);
+    transition: 0.3s;
+  }
+  nav a:hover {
+    color:rgb(148, 148, 41);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 2rem;
+    color: var(--primary-color);
+    list-style: none;
+  }
+  .burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  
+  nav ul li {
+    font-weight: 700;
+  }
+
+  .home {
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 1rem;
+    max-width: 70rem;
+    margin: auto;
+  }
+  .content
+  {
+      padding: 100px 20px;
+  }
+  .content h2{
+    font-size: 2rem;
+  }
+  .home img {
+    height: 35rem;
+    width: 35rem;
+  }
+  .icon{
+    width: 30px;
+    height: 30px;
+}
+  .bio {
+    width: 25rem;
+    /* margin: 20rem 20rem; */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  }
+  .bio h1 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin);
+    font-size:40px ;
+  }
+  .bio-title{
+    font-size: 30px;
+  }
+  .bio p {
+    text-decoration: var(--bold-font);
+    line-height: var(--line-height);
+    padding: 0.1rem 0;
+  }
+  .bio-text{
+      margin: 1rem 2rem;
+      font-size: 20px;
+  }
+  .bio-button{
+      border-radius: 0.625rem;
+      font-size: var(--bold-font);
+      /* font-style: oblique; */
+      font-weight: bold;
+  }
+  .about1 {
+ background-color: var(--bg-color);
+font-size: larger;
+margin: 2rem 10rem;
+  }
+  .about h2 {
+    color: var(--secondary-color);
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+  }
+  
+  button{
+      border: black;
+      margin: 0.1rem 2rem;
+      padding: 1rem 2rem;
+      background-color :var(--primary-color);
+      cursor: pointer;
+  }
+  button:hover{
+      color: var(--secondary-color);
+  }
+
+  .skills1 {
+      background-color: var(--bg-color);
+      padding: 1rem 6rem;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      gap: 1rem;
+      max-width: 70rem;
+      margin: auto;
+  }
+  .skills1 img {
+    height: 12rem;
+    width: 12rem;
+  }
+  .skills h2 {
+    color: var(--secondary-color);
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+  }
+ #projects h2{
+    color: var(--secondary-color);
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.icon-card{
+        background-color: #fff;
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--secondary-shadow);
+        padding: 20px;
+        margin: 10px;
+  }
+
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+    display: flex;
+    position: fixed;
+    text-align: center;
+    justify-content: space-evenly;
+    top: 95%;
+    left: 40%;
+}
+.fab{
+  height:20px;
+  width:50px;
+}
+.fab:hover{
+    color: red;
+}
+.fab {
+    color: #000000;
+    padding: 2px 2px;
+}
+
+#footer {
+    background-color: #808080;
+    text-align: center;
+    position: fixed;
+    top: 96%;
+    left: 10px;
+}
+.contact{
+  background-color: var(--bg-color);
+}
+.contact a{
+  text-align: center;
+}
+#contact h2{
+color: var(--secondary-color);
+margin-bottom: var(--bottom-margin);
+text-align: center;
+}
+  .contact-form-container {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+  }
+  .contact-form-container label {
+    line-height: 2.7rem;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+  }
+  
+  .contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+  }
+  
+  .contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset var(--primary-color);
+    font-size: 0.875rem;
+    outline: none;
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+  }
+  .projects {
+    background-color: var(--bg-color);
+    margin-top: 2rem;
+  }
+
+  .project-pic {
+    width: 65%;
+    height: 60%;
+  }
+  
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .project-container p {
+    padding: 0.4rem;
+  }
+  
+  .projects-title {
+    margin-bottom: var(--bottom-margin);
+    color: var(--secondary-color);
+    text-align: center;
+  }
+  .project-title {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-details {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    .home {
+      margin-top: 4rem;
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .home img {
+          height: 27.5rem;
+          width: 30rem;
+      }
+  
+    .bio {
+      margin-top: 7rem;
+      width: 30.5rem;
+    }
+    .social-icons {
+      position: fixed;
+      top: 93%;
+      left: 40%;
+  }
+  .about1 {
+    margin: 2px 10px;
+      }
+  }
+  @media screen and (max-width: 425px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    nav {
+      font-size: 1rem;
+      top:0;
+      left:0;
+      justify-content: space-evenly;
+      margin:0px 0px;
+      padding: 10px 10px;
+    }
+    nav ul {
+      position: fixed;
+      background-color: var(--bg-color);
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
+  
+     nav ul li {
+      margin: 8px;
+    }
+    .burger-menu {
+      display: block;
+    }
+    .burger-menu img{
+      height: 20px;
+      width:20px;
+    }
+  
+    nav ul.show {
+      transform: translateX(0);
+    }
+    .home img{
+      height: 15rem;
+      width: 15rem;
+    }
+    .bio h1{
+      font-size: larger;
+    }
+    .bio-title{
+      font-size: large;
+    }
+    .bio-text{
+      font-size: medium;
+    }
+    .bio-button{
+      font-size: large;
+    }
+    .skills1{
+      display:flex;
+      flex-direction: column;
+    }
+    .projects{
+      display:flex;
+      flex-direction: column;
+    }
+    .icon-card{
+      height:15rem;
+      width:15rem;
+    }
+    .content{
+      margin-top: 20px;
+      padding: 50px 10px;
+    }
+    .social-icons {
+      position: fixed;
+      top: 93%;
+      left: 30%;
+  }
+  .about1 {
+   margin: 2px 10px;
+     }
+     .content h2{
+      font-size: 1.2rem;
+    }
+}
+
+  
+
